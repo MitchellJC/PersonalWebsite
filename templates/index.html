@@ -4,5 +4,41 @@
 {% block HomeActive %}active{% endblock %}
 
 {% block content %}
-<h1>Projects</h1>
+<section class="hero">
+    <div class="container">
+      <div class="left-col">
+        <h1>ScientificCalculator</h1>
+
+        <div class ="hero-cta">
+        	<p>Recreation of a scientific calculator as a desktop app. Based on the CASIO fx-82AU PLUS II calculator.</p>
+          	<a href="#" class="view-code">View Code</a>
+          	<a href="#" class="see-demo">See Demo</a>
+        </div>  
+      </div>
+
+      <img src="static/images/ApplicationScreen.PNG" class="hero-image" alt="Image of calculator app.">
+    </div>
+  </section>  
+
+  <section class="projects-section">
+  	<div class="container">
+  		<h2>Projects</h2>
+
+  		<ul>
+  			<li>
+  				<div class="project-box">
+  					<h3>ScientificCalculator</h3>
+
+	  				<img src="static/images/ApplicationScreen.PNG" class="project-image" alt="Image of calculator app.">
+
+	  				<div class="right-col">
+	  					<p>Recreation of a scientific calculator as a desktop app. Based on the CASIO fx-82AU PLUS II calculator.</p>
+	  					<a href="#" class="view-code">View Code</a>
+	          			<a href="#" class="see-demo">See Demo</a>
+	  				</div>
+	  			</div>	
+  			</li>
+  		</ul>
+  	</div>
+  </section>
 {% endblock %}

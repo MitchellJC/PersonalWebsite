@@ -2,7 +2,7 @@
 
 __author__ = "Mitchell Clark"
 
-from flask import Flask, url_for, render_template, send_from_directory
+from flask import Flask, render_template, send_from_directory
 
 app = Flask(__name__)
 

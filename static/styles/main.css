@@ -1,0 +1,120 @@
+:root{
+	--primary-colour: navy;
+}
+
+body{
+	background: white; 
+	margin: 0;
+	font-family: 'Georgia';
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+section{
+	padding: 5em 2em;
+}
+
+.navbar{
+	background: white;
+	padding: 1em;
+}
+	
+.logo{
+	font-weight: bold;
+	color: black;
+	font-family: 'Verdana';
+	font-size: 2em;
+}
+
+nav{
+	background: var(--primary-colour);
+	height: 100vh;
+	top: 0;
+	width: 50vw;
+	z-index: 999;
+	position: fixed;
+	display: none;
+}
+nav ul{
+	margin: auto;
+}
+
+nav li a{
+	color: white;
+	display:  block;
+	padding: 1em;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+nav li a:hover{
+	font-weight: bold;
+}
+
+nav.menu-btn{
+	display: block;
+}
+
+.mobile-menu-exit{
+	float: right;
+	margin: .5em;
+	cursor: pointer;
+}
+
+.navbar .container{
+	display: flex;
+	place-content: space-between;
+}
+
+.mobile-menu{
+	cursor: pointer;
+}
+
+.hero img{
+	margin-top: 2em;
+}
+
+.view-code{
+background-color: var(--primary-colour);
+color: white;
+padding: .5em 1em;
+border-radius: 5em;
+}
+
+.projects-section h3{
+	color: white;
+} 
+.project-box{
+	border-radius: 2em;
+	width: 400px;
+	padding: 1em;
+	color: white;
+	background-color: #212121;
+}
+
+label{
+	display: block;
+}
+
+input{
+	display: block;
+}
+
+input, textarea{
+	width: 100%;
+	box-sizing: border-box;
+}
+
+input[type="submit"]{
+	cursor: pointer;
+	background-color: var(--primary-color);
+}
