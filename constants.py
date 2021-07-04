@@ -1,2 +1,0 @@
-"""Constants for main.py"""
-
