@@ -33,25 +33,44 @@ ul {
 	font-size: 1.5rem;
 }
 
-svg{
+.mobile-menu{
 
-	width: 1.5rem;
+	width: 1.5em;
 	height: auto;
 	padding-right: 2em;
 }
 
 nav{
 	font-weight: bold;
+	z-index: 999;
+	position: fixed;
 	display: none;
+	background: #6C74B2;
+	width: 100vw;
+	height: 100vh;
+}
+
+.external-nav ul{
+	display: flex;
+}
+
+.external-image{
+	height: 2em;
+	width: auto;
+}
+
+.mobile-menu-exit{
+	width: 1.5em;
+	height: auto;
+	padding-right: 2em;
+}
+
+nav.mobile-menu-open{
+	display: block;
 }
 
 nav a{
 	color: #F9A2A2;
-}
-
-.external-nav{
-	color: black;
-	display: none;
 }
 
 .navbar-separator{
