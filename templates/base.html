@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+	<title>{% block title %}{% endblock %} | Mitchεll Clλrk</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+	<div class="navbar">
+		<div class="container">
+			<a class="logo" href="/">Mitchεll Clλrk</a>
+
+			<svg width="34" height="39" viewBox="0 0 34 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M34 4.70001H-2V11.9H34V4.70001Z" fill="#F9A1A1"/>
+			<path d="M34 15.9H-2V23.1H34V15.9Z" fill="#F9A1A1"/>
+			<path d="M34 27.1H-2V34.3H34V27.1Z" fill="#F9A1A1"/>
+			</svg>
+
+			<nav>
+				<ul>
+					<li><a {% block home_active %}{% endblock %} href="/">Home</a></li>
+					<li><a {% block about_active %}{% endblock %} href="/about">About</a></li>
+					<li><a {% block contact_active %}{% endblock %} href="/contact">Contact</a></li>
+					<li><a href="static/resume.pdf">Resume</a></li>
+				</ul>
+			</nav>	
+
+			<div class="external-nav">
+				<ul>
+					<li>
+						<a href="https://github.com/MitchellJC">
+							<img src="static/images/github-logo.png">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/mitchell-clark-824631194/">
+							<img src="static/images/linkedin-logo.png">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="navbar-separator"></div>	
+
+
+	{% block content %}
+	{% endblock %}
+</body>

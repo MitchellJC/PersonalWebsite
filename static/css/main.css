@@ -1,0 +1,60 @@
+/* General. */
+body{
+	font-family: "Verdana";
+	padding: 0;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+/* Navbar. */
+.navbar{
+	background: #6C74B2;
+}
+
+.navbar .container{
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo{
+	padding: 1em 0 1em 1em;
+	color: white;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+svg{
+
+	width: 1.5rem;
+	height: auto;
+	padding-right: 2em;
+}
+
+nav{
+	font-weight: bold;
+	display: none;
+}
+
+nav a{
+	color: #F9A2A2;
+}
+
+.external-nav{
+	color: black;
+	display: none;
+}
+
+.navbar-separator{
+	background: #83C2D0;
+	height: .4em;
+}
