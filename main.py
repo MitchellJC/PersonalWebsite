@@ -11,15 +11,15 @@ def home():
 	"""First page opened on website. Contains showcased projects."""
 	return render_template("index.html")
 
-@app.route("/aboutme")
+@app.route("/about")
 def about_me():
 	"""Page containing short paragraph about myself."""
-	return render_template("aboutme.html")
+	return render_template("about.html")
 
-@app.route("/contactme")
+@app.route("/contact")
 def contact_me():
 	"""Page containing a form to send emails to me."""
-	return render_template("contactme.html")
+	return render_template("contact.html")
 
 @app.route("/resume")
 def resume():

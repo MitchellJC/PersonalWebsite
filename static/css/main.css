@@ -40,6 +40,11 @@ ul {
 	padding-right: 2em;
 }
 
+.mobile-menu-header{
+	display: flex;
+	justify-content: space-between;
+}
+
 nav{
 	font-weight: bold;
 	z-index: 999;
@@ -47,16 +52,34 @@ nav{
 	display: none;
 	background: #6C74B2;
 	width: 100vw;
-	height: 100vh;
+	height: auto;
+	text-align: center;
+	align-items: center;
+}
+
+.active-page{
+	color: #83C2D0;
+}
+
+.mobile-logo{
+	padding: 1em 0 1em 1em;
+	color: white;
+	font-weight: bold;
+	font-size: 1.5rem;
+	color: white;
+
 }
 
 .external-nav ul{
 	display: flex;
+	justify-content: center;
 }
 
 .external-image{
 	height: 2em;
 	width: auto;
+	margin-left: 1em;
+	margin-right: 1em;
 }
 
 .mobile-menu-exit{
@@ -69,7 +92,12 @@ nav.mobile-menu-open{
 	display: block;
 }
 
+nav li{
+	padding-bottom: 2em;
+}
+
 nav a{
+
 	color: #F9A2A2;
 }
 
