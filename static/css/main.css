@@ -26,8 +26,8 @@ ul {
 	justify-content: space-between;
 }
 
-.logo{
-	padding: 1em 0 1em 1em;
+.logo, .mobile-logo{
+	margin: 1.5rem;
 	color: white;
 	font-weight: bold;
 	font-size: 1.5rem;
@@ -37,7 +37,11 @@ ul {
 
 	width: 1.5em;
 	height: auto;
-	padding-right: 2em;
+	margin-right: 1.5rem;
+}
+
+.mobile-menu:hover{
+	cursor: pointer;
 }
 
 .mobile-menu-header{
@@ -46,7 +50,6 @@ ul {
 }
 
 nav{
-	font-weight: bold;
 	z-index: 999;
 	position: fixed;
 	display: none;
@@ -61,16 +64,11 @@ nav{
 	color: #83C2D0;
 }
 
-.mobile-logo{
-	padding: 1em 0 1em 1em;
-	color: white;
-	font-weight: bold;
-	font-size: 1.5rem;
-	color: white;
-
+.external-nav{
+	display: none;
 }
 
-.external-nav ul{
+.external-nav ul, .external-nav-mobile ul{
 	display: flex;
 	justify-content: center;
 }
@@ -78,18 +76,18 @@ nav{
 .external-image{
 	height: 2em;
 	width: auto;
-	margin-left: 1em;
-	margin-right: 1em;
+	margin-left: .5em;
+	margin-right: .5em;
 }
 
 .mobile-menu-exit{
 	width: 1.5em;
 	height: auto;
-	padding-right: 2em;
+	margin-right: 1.5rem;
 }
 
-nav.mobile-menu-open{
-	display: block;
+.mobile-menu-exit:hover{
+	cursor: pointer;
 }
 
 nav li{
@@ -104,4 +102,62 @@ nav a{
 .navbar-separator{
 	background: #83C2D0;
 	height: .4em;
+}
+
+@media only screen and (max-width: 768px){
+	.mobile-menu-open{
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 768px){
+	.mobile-menu, .mobile-menu-exit{
+		display: none;
+	}
+
+	.navbar .container{
+	display: flex;
+	justify-content: space-between;
+	}
+
+	.external-nav{
+		display: flex;
+		margin: auto 1.5rem auto auto;
+		justify-content: flex-end;
+	}
+
+	.external-nav-mobile{
+		display: none;
+	}
+
+	.external-image{
+	height: 2em;
+	width: auto;
+	margin-left: .5em;
+	margin-right: .5em;
+	}
+
+	nav {
+		display: flex;
+		height: unset;
+		width: unset;
+		position: unset;
+		background: unset;
+		text-align: unset;
+		align-items: unset;
+	}
+
+	.mobile-logo{
+		display: none;
+	}
+
+	nav ul{
+		display: flex;
+	}
+
+	nav li{
+		padding: 0;
+		margin: auto 1em auto 1em;
+
+	}
 }

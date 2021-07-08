@@ -31,10 +31,9 @@
 					<li><a {% block home_active %}{% endblock %} href="/">Home</a></li>
 					<li><a {% block about_active %}{% endblock %} href="/about">About</a></li>
 					<li><a {% block contact_active %}{% endblock %} href="/contact">Contact</a></li>
-					<li><a href="static/resume.pdf" target=”_blank”>Resume</a></li>
+					<li><a href="static/resume.pdf" target=”blank”>Resume</a></li>
 				</ul>
-
-				<div class="external-nav">
+				<div class="external-nav-mobile">
 				<ul>
 					<li>
 						<a href="https://github.com/MitchellJC" target=”blank” rel="noopener noreferrer">
@@ -47,10 +46,23 @@
 						</a>
 					</li>
 				</ul>
-				</div>
-
 				<div class="navbar-separator"></div>
+			</div>
 			</nav>	
+			<div id="external-nav" class="external-nav">
+				<ul>
+					<li>
+						<a href="https://github.com/MitchellJC" target=”blank” rel="noopener noreferrer">
+							<img class="external-image" src="static/images/github-logo.png">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/mitchell-clark-824631194/" target=”_blank” rel="noopener noreferrer">
+							<img class="external-image" src="static/images/linkedin-logo.png">
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 
