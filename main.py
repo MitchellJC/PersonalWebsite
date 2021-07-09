@@ -23,8 +23,8 @@ def contact_me():
 
 @app.route("/resume")
 def resume():
-	"""Page containing short paragraph about myself."""
-	return send_from_directory("static", "MitchellClarkResume.pdf")
+	"""Page containing my resume."""
+	return render_template("resume.html")
 
 if __name__ == "__main__":
 	app.run(debug=True)

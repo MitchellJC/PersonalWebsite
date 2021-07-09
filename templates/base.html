@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 	<script src="static/js/navbar.js" defer></script>
 </head>
-<body>
+<body {% block body_class %}{% endblock %}>
 	<div class="navbar">
 		<div class="container">
 			<a class="logo" href="/">Mitchεll Clλrk</a>
@@ -31,7 +31,7 @@
 					<li><a {% block home_active %}{% endblock %} href="/">Home</a></li>
 					<li><a {% block about_active %}{% endblock %} href="/about">About</a></li>
 					<li><a {% block contact_active %}{% endblock %} href="/contact">Contact</a></li>
-					<li><a href="static/resume.pdf" target=”blank”>Resume</a></li>
+					<li><a {% block resume_active %}{% endblock %} href="/resume">Resume</a></li>
 				</ul>
 				<div class="external-nav-mobile">
 				<ul>

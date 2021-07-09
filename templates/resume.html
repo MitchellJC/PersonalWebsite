@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Resume{% endblock %}
+
+{% block body_class %}class="resume-body"{% endblock %}
+{% block resume_active %}class="active-page"{% endblock %}
+
+{% block content %}
+<section class="resume-section">
+	<div class="container">
+		<embed class="resume-embed" src="static/pdf/resume.pdf">
+	</div>
+</section>
+{% endblock %}
