@@ -1,3 +1,8 @@
+:root{
+	--pink: #F9A2A2;
+	--light-blue: #83C2D0;
+}
+
 /* General. */
 body{
 	font-family: "Verdana";
@@ -66,7 +71,7 @@ nav{
 }
 
 .active-page{
-	color: #83C2D0;
+	color: var(--light-blue);
 }
 
 .external-nav{
@@ -101,11 +106,15 @@ nav li{
 
 nav a{
 
-	color: #F9A2A2;
+	color: var(--pink);
+}
+
+nav a:hover{
+	color: white;
 }
 
 .navbar-separator{
-	background: #83C2D0;
+	background: var(--light-blue);
 	height: .4em;
 }
 
@@ -199,16 +208,58 @@ p{
 	padding: 3em;
 }
 
-/* Resume page. */
+/* Resume Page. */
 .resume-section .container{
+	position: relative;
 	display: flex;
 	justify-content: center;
 	padding: 5rem;
-	height: 60rem;
+	height: 80vh;
 }
 
 .resume-embed{
-	width: 90%;
+	width: 70%;
 	
 	border: none;
+}
+
+/* Contact Page. */
+.contact-box{
+	display: flex;
+	justify-content: center;
+}
+
+label{
+	display: block;
+	color: var(--pink);
+	margin-bottom: .5em;
+}
+
+input, textarea{
+	display: block;
+	margin-bottom: 1.5em;
+	box-sizing: border-box;
+	width: 100%;
+	border-radius: .5em;
+	border: none;
+}
+
+input[type="submit"] {
+	background-color: black;
+	color: var(--pink);
+	height: 3em;
+	border-radius: 1.5em;
+	width: 10em;
+
+}
+
+textarea:focus, input:focus{
+    outline: var(--light-blue);
+    border: .3em solid var(--light-blue);
+}
+
+input[type="submit"]:hover{
+	cursor: pointer;
+	background-color: var(--pink);
+	color: black;
 }
