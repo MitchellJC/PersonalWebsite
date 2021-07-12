@@ -224,6 +224,14 @@ p{
 }
 
 /* Contact Page. */
+.message-sent-notification{
+	color: var(--light-blue);
+	background-color: black;
+	text-align: center;
+	margin: 0;
+	padding: 1em;
+}
+
 .contact-box{
 	display: flex;
 	justify-content: center;
@@ -250,7 +258,6 @@ input[type="submit"] {
 	height: 3em;
 	border-radius: 1.5em;
 	width: 10em;
-
 }
 
 textarea:focus, input:focus{
