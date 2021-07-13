@@ -23,7 +23,7 @@ mail_settings = {
 }
 
 app = Flask(__name__)
-app.secret_key = "password"
+app.secret_key = "password" # Change for deployment.
 
 app.config.update(mail_settings)
 mail = Mail(app)

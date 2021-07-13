@@ -224,6 +224,11 @@ p{
 }
 
 /* Contact Page. */
+.contact-section{
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
 .message-sent-notification{
 	color: var(--light-blue);
 	background-color: black;
@@ -269,4 +274,38 @@ input[type="submit"]:hover{
 	cursor: pointer;
 	background-color: var(--pink);
 	color: black;
+}
+
+/* Home Page. */
+/* Hero Section. */
+.hero-section{
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+.hero-section .container{
+	display: block;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	align-items: center;
+	align-content: center;
+}
+
+.hero-section h1{
+	color: white;
+	font-weight: normal;
+	text-align: center;
+}
+
+.hero-image{
+	display: block;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hero-cta{
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
 }

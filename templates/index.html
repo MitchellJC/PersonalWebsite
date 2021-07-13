@@ -2,8 +2,69 @@
 
 {% block title %}Home{% endblock %}
 
+{% block body_class %}class="home-body"{% endblock %}
 {% block home_active %}class="active-page"{% endblock %}
 
 {% block content %}
+<section class="hero-section">
+	<div class="container">
+		<h1>Efficient and Maintanable Software Solutions</h1>
 
+		<img class="hero-image" src="static/images/calculator.png">
+
+		<div class="hero-cta">
+			<p>Find Out More</p>
+
+			<img src="static/images/hero-arrow.svg">
+		</div>
+	</div>
+</section>
+
+<section class="projects-section">
+	<div class="container">
+		<h2>Projects</h2>
+
+		<div class="project-grid">
+			<ul>
+				<li>
+					<h3>ScientificCalculator</h3>
+					<p>Scientific calculator for desktop. Based on the CASIO fx82-AU II.</p>
+
+					<div class="project-buttons-box">
+						<ul>
+							<li>
+								<a href="https://github.com/MitchellJC/ScientificCalculator" target="blank">View Code</a>
+							</li>
+							<li>
+								<a href="https://github.com/MitchellJC/ScientificCalculator" target="blank">View Project</a>
+							</li>
+						</ul>
+					</div>
+
+					<img src="static/images/calculator.png">
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<section class="footer-section">
+	<div class=container>
+		<h2>Where to go next?</h2>
+
+		<div class="footer-cta-buttons">
+			<ul>
+				<li>
+					<a href="/about">About</a>
+				</li>
+				<li>
+					<a href="/contact">Contact</a>
+				</li>
+				<li>
+					<a href="/resume">Resume</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
 {% endblock %}
