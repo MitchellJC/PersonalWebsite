@@ -1,6 +1,7 @@
 :root{
 	--pink: #F9A2A2;
 	--light-blue: #83C2D0;
+	--light-purple: #6C74B2;
 }
 
 /* General. */
@@ -26,9 +27,23 @@ h2{
 	margin: none;
 }
 
+h3{
+	font-weight: normal;
+	font-size: 1.5em;
+}
+
+section{
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+img{
+	max-width: 80%;
+}
+
 /* Navbar. */
 .navbar{
-	background: #6C74B2;
+	background: var(--light-purple);
 }
 
 .navbar .container{
@@ -63,7 +78,7 @@ nav{
 	z-index: 999;
 	position: fixed;
 	display: none;
-	background: #6C74B2;
+	background: var(--light-purple);
 	width: 100vw;
 	height: auto;
 	text-align: center;
@@ -278,11 +293,6 @@ input[type="submit"]:hover{
 
 /* Home Page. */
 /* Hero Section. */
-.hero-section{
-	padding-top: 5rem;
-	padding-bottom: 5rem;
-}
-
 .hero-section .container{
 	display: block;
 	margin-left: 1.5rem;
@@ -300,12 +310,86 @@ input[type="submit"]:hover{
 .hero-image{
 	display: block;
 	max-width: 100%;
+	margin: 3rem auto 3rem auto;
+	box-shadow: 10px 10px #303774;
+}
+
+.hero-button{
+	background-color: black;
+	color: white;
 	margin-left: auto;
 	margin-right: auto;
+	width: 12em;
+	border-radius: 1.5em;
 }
 
 .hero-cta{
 	display: flex;
-	margin-left: auto;
-	margin-right: auto;
+	justify-content: space-around;
+}
+
+/* Projects Section. */
+.projects-section{
+	background: var(--light-blue);
+}
+
+.projects-section h2{
+	color: black;
+	font-weight: bold;
+}
+
+.project-grid{
+	display: grid;
+}
+
+.project{
+	background-color: var(--pink);
+	border-radius: 2em;
+	padding: 1rem;
+}
+
+.project p{
+	color: #373737;
+}
+
+.project img{
+	outline-color: var(--light-blue);
+    border: .3em solid var(--light-blue);
+    background-color: var(--light-blue);
+    border-radius: 2em;
+    display: block;
+  	margin-left: auto;
+ 	margin-right: auto;
+ 	position: relative;
+ 	bottom: -2em;
+}
+
+.project-buttons-box li{
+	margin-top: 2em;
+}
+
+.project-buttons-box a{
+	background-color: black;
+	color: white;
+	border-radius: 2.5em;
+	padding: 1em;
+	font-size: .75em;
+}
+
+/* Footer Section. */
+.footer-cta-buttons{
+	text-align: center;
+	display: block;
+}
+
+.footer-cta-buttons li{
+	margin-bottom: 3em;
+}
+
+.footer-cta-buttons a{
+	text-align: center;
+	background-color: var(--light-purple);
+	color: white;
+	border-radius: 2.5em;
+	padding: 1em;
 }
