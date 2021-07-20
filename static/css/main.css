@@ -5,6 +5,10 @@
 }
 
 /* General. */
+html{
+  scroll-behavior: smooth;
+ }
+
 body{
 	font-family: "Verdana";
 	padding: 0;
@@ -130,7 +134,7 @@ nav a:hover{
 
 .navbar-separator{
 	background: var(--light-blue);
-	height: .4em;
+	height: .4rem;
 }
 
 @media only screen and (max-width: 768px){
@@ -192,7 +196,6 @@ nav a:hover{
 }
 
 /* About Page. */
-
 h2{
 	font-style: italic;
 	font-weight: normal;
@@ -224,16 +227,20 @@ p{
 }
 
 /* Resume Page. */
+.resume-section{
+	padding: 0;
+}
+
 .resume-section .container{
-	position: relative;
-	display: flex;
-	justify-content: center;
-	padding: 5rem;
-	height: 80vh;
+	display: block;
+	padding: 0;
+	height: 100%;
 }
 
 .resume-embed{
-	width: 70%;
+	display: block;
+	width: 100%;
+	height: calc(100vh - 5.2rem); /* 5.2rem is the height of the navbar. */
 	
 	border: none;
 }
@@ -314,7 +321,9 @@ input[type="submit"]:hover{
 	box-shadow: 10px 10px #303774;
 }
 
-.hero-button{
+.hero-button {
+	display: flex;
+	justify-content: space-around;
 	background-color: black;
 	color: white;
 	margin-left: auto;
@@ -323,9 +332,10 @@ input[type="submit"]:hover{
 	border-radius: 1.5em;
 }
 
-.hero-cta{
-	display: flex;
-	justify-content: space-around;
+.hero-button:hover{
+	color: black;
+	background-color: white;
+	cursor: pointer;
 }
 
 /* Projects Section. */
@@ -338,14 +348,18 @@ input[type="submit"]:hover{
 	font-weight: bold;
 }
 
-.project-grid{
+.project-grid ul{
 	display: grid;
+	grid-template-rows: auto auto;
+	grid-row-gap: 4rem;
 }
 
 .project{
 	background-color: var(--pink);
 	border-radius: 2em;
 	padding: 1rem;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
 }
 
 .project p{
@@ -364,16 +378,25 @@ input[type="submit"]:hover{
  	bottom: -2em;
 }
 
+.project-buttons-box ul{
+	display: block;
+}
+
 .project-buttons-box li{
-	margin-top: 2em;
+	margin-top: 2.5rem;
 }
 
 .project-buttons-box a{
 	background-color: black;
 	color: white;
 	border-radius: 2.5em;
-	padding: 1em;
+	padding: 1rem;
 	font-size: .75em;
+}
+
+.project-buttons-box a:hover{
+	background-color: white;
+	color: black;
 }
 
 /* Footer Section. */
@@ -392,4 +415,10 @@ input[type="submit"]:hover{
 	color: white;
 	border-radius: 2.5em;
 	padding: 1em;
+}
+
+.footer-cta-buttons a:hover{
+	text-align: center;
+	background-color: white;
+	color: var(--light-purple);
 }

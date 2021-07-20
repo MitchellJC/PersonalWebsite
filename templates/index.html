@@ -2,6 +2,10 @@
 
 {% block title %}Home{% endblock %}
 
+{% block head %}
+<script src="static/js/homepage.js" defer></script>
+{% endblock %}
+
 {% block body_class %}class="home-body"{% endblock %}
 {% block home_active %}class="active-page"{% endblock %}
 
@@ -12,13 +16,11 @@
 
 		<img class="hero-image" src="static/images/calculator.png">
 
-		<div class="hero-button">
-			<div class="hero-cta">
-				<p>Find Out More</p>
+		<div id="hero-button" class="hero-button">
+			<p>Find Out More</p>
 
-				<img src="static/images/hero-arrow.svg">
-			</div>
-	</div>
+			<img src="static/images/hero-arrow.svg">
+		</div>
 	</div>
 </section>
 
@@ -28,8 +30,8 @@
 
 		<div class="project-grid">
 			<ul>
-				<li class="project">
-					<h3>ScientificCalculator</h3>
+				<li id="calculator-project" class="project">
+					<h3>Scientific Calculator</h3>
 					<p>Scientific calculator for desktop. Based on the CASIO fx82-AU II.</p>
 
 					<div class="project-buttons-box">
@@ -44,6 +46,24 @@
 					</div>
 
 					<img src="static/images/calculator.png">
+				</li>
+
+				<li class="project">
+					<h3>Personal Website</h3>
+					<p>Responsive personal website made in Python (Flask), HTML and CSS. Designed to support screen sizes from 320px wide.</p>
+
+					<div class="project-buttons-box">
+						<ul>
+							<li>
+								<a href="https://github.com/MitchellJC/PersonalWebsite" target="blank">View Code</a>
+							</li>
+							<li>
+								<a href="https://github.com/MitchellJC/PersonalWebsite" target="blank">View Project</a>
+							</li>
+						</ul>
+					</div>
+
+					<img src="static/images/navbar-screenshot.png">
 				</li>
 			</ul>
 		</div>
