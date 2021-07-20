@@ -8,7 +8,15 @@
 {% block content %}
 <section class="resume-section">
 	<div class="container">
-		<embed class="resume-embed" src="static/pdf/resume.pdf">
+		<object class="resume-embed" data="static/pdf/resume.pdf">
+			<p>
+				It appears something has gone wrong with your pdf viewer. Please try the following options to view my resume.
+			</p>
+
+			<a href="static/pdf/resume.pdf" target="blank">Open PDF in new tab</a>
+			<a href="static/pdf/resume.pdf" target="blank" download>Download PDF</a>
+
+		</object>
 	</div>
 </section>
 {% endblock %}
