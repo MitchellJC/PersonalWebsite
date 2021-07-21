@@ -231,6 +231,32 @@ p{
 	padding: 2em;
 }
 
+.about-container img{
+	display: none;
+}
+
+@media only screen and (min-width: 768px){
+	.about-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		justify-items: center;
+	}
+
+	.about-container img{
+		display: block;
+		align-self: center;
+		width: 100%;
+	}
+
+	.about-box{
+		max-width: unset;
+		width: 20rem;
+	}
+}
+
 /* Resume Page. */
 .resume-section{
 	padding: 0;
@@ -260,8 +286,6 @@ p{
 	color: var(--light-blue);
 }
 
-
-
 /* Contact Page. */
 .contact-section{
 	padding-top: 5rem;
@@ -274,6 +298,10 @@ p{
 	text-align: center;
 	margin: 0;
 	padding: 1em;
+}
+
+.contact-container img{
+	display: none;
 }
 
 .contact-box{
@@ -315,6 +343,21 @@ input[type="submit"]:hover{
 	color: black;
 }
 
+@media only screen and (min-width: 768px){
+	.contact-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		justify-items: center;
+	}
+
+	.contact-container img{
+		display: block;
+		align-self: center;
+	}
+}
 /* Home Page. */
 /* Hero Section. */
 .hero-section .container{
