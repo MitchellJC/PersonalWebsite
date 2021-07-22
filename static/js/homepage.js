@@ -1,10 +1,10 @@
 const heroButtons = document.querySelectorAll(".hero-button") 
-	heroProject = document.getElementById("calculator-project")
+	projectsTitle = document.getElementById("projects-title")
 
 for (var i = 0; i < heroButtons.length; i++){
 	let heroButton = heroButtons[i]
 
 	heroButton.addEventListener("click", () => {
-	heroProject.scrollIntoView()
+	projectsTitle.scrollIntoView()
 	})
 }
