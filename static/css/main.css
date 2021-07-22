@@ -382,12 +382,13 @@ input[type="submit"]:hover{
 	}
 
 	.contact-box{
-		width: 80%;
+		width: 100%;
 	}
 
 	.contact-container img{
 		display: block;
-		align-self: center;
+		position: relative;
+		top: -3rem;
 	}
 
 	.contact-input{
@@ -474,10 +475,21 @@ input[type="submit"]:hover{
 }
 
 .projects-section h2{
-	color: white;
-	font-weight: normal;
-	font-size: 2rem;
+	width: 20%;
+	margin-left: 3.2rem;
+	margin-right: auto;
+	border-radius: 0;
+	text-align: center;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	color: aliceblue;
+	font-weight: bold;
+	font-size: 3rem;
 	font-style: normal;
+	font-family: "Georgia";
+	text-decoration: underline;
+	text-decoration-style: double;
+	text-decoration-color: grey;
 }
 
 .project-grid ul{
@@ -487,7 +499,7 @@ input[type="submit"]:hover{
 }
 
 .project{
-	background-color: var(--pink);
+	background-color: aliceblue;
 	border-radius: 2em;
 	padding: 1rem;
 	margin-left: 1.5rem;
