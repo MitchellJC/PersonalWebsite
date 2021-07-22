@@ -28,10 +28,6 @@ ul{
 	list-style: none;
 }
 
-h2{
-	margin: none;
-}
-
 h3{
 	font-weight: normal;
 	font-size: 1.5em;
@@ -44,6 +40,20 @@ section{
 
 img{
 	max-width: 80%;
+}
+
+h2{
+	font-weight: normal;
+	margin: none;
+	color: white;
+	text-align: center;
+	margin-bottom: 5rem;
+	font-size: 2rem;
+}
+
+p{
+	overflow-wrap: break-word;
+	font-size: 100%;
 }
 
 /* Navbar. */
@@ -202,22 +212,9 @@ nav a:hover{
 }
 
 /* About Page. */
-h2{
-	font-style: italic;
-	font-weight: normal;
-	color: white;
-	text-align: center;
-	margin-bottom: 5rem;
-}
-
-p{
-	overflow-wrap: break-word;
-	font-size: 100%;
-}
-
 .about-section{
-	padding-top: 5rem;
-	padding-bottom: 5rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 
 .about-box{
@@ -236,25 +233,47 @@ p{
 	display: none;
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 1089px){
 	.about-container {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		margin-left: auto;
-		margin-right: auto;
-		width: 50%;
+		grid-gap: 2rem;
+		margin: 10rem auto 0 auto;
+		width: 90%;
 		justify-items: center;
 	}
 
 	.about-container img{
 		display: block;
 		align-self: center;
-		width: 100%;
+		width: 50%;
 	}
 
 	.about-box{
 		max-width: unset;
-		width: 20rem;
+	}
+
+	.about-box p{
+		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (min-width: 698px) and (max-width: 1089px){
+	.about-container {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 2rem;
+		margin: 10rem auto 0 auto;
+		width: 90%;
+		justify-items: center;
+	}
+
+	.about-box{
+		max-width: unset;
+	}
+
+	.about-box p{
+		font-size: 1.5rem;
 	}
 }
 
@@ -289,8 +308,8 @@ p{
 
 /* Contact Page. */
 .contact-section{
-	padding-top: 5rem;
-	padding-bottom: 5rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 
 .message-sent-notification{
@@ -301,12 +320,19 @@ p{
 	padding: 1em;
 }
 
+.contact-container{
+	margin-top: 10rem;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .contact-container img{
 	display: none;
 }
 
 .contact-box{
-	display: flex;
+	display: block;
 	justify-content: center;
 }
 
@@ -323,6 +349,7 @@ input, textarea{
 	width: 100%;
 	border-radius: .5em;
 	border: none;
+	resize: none;
 }
 
 input[type="submit"] {
@@ -350,13 +377,22 @@ input[type="submit"]:hover{
 		grid-template-columns: 1fr 1fr;
 		margin-left: auto;
 		margin-right: auto;
-		width: 50%;
+		width: 90%;
 		justify-items: center;
+	}
+
+	.contact-box{
+		width: 80%;
 	}
 
 	.contact-container img{
 		display: block;
 		align-self: center;
+	}
+
+	.contact-input{
+		width: 80%
+		height: 40%;
 	}
 }
 /* Home Page. */
@@ -495,7 +531,7 @@ input[type="submit"]:hover{
 	color: black;
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 994px){
 	.project-grid ul{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -506,16 +542,27 @@ input[type="submit"]:hover{
 	}
 
 	.project-buttons-box ul{
-	display: block;
+	display: flex;
 	margin-left: 0;
+	margin-bottom: 3rem;
+	margin-top: 3rem;
+	gap: 1rem;
 	}
 
+	.project-buttons-box li{
+	margin-top: 0;
+}
+
 	.project img{
- 	bottom: unset;
- 	bottom: 4rem;
- 	right: -4rem;
+ 	position: relative;
+ 	bottom: 0;
  	width: 400px;
- 	height: 250px;
+	height: 300px;
+ 	
+	}
+
+	.project p{
+		height: 5%;
 	}
 
 }
