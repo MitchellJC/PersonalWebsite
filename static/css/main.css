@@ -238,6 +238,7 @@ nav a:hover{
 .about-section h2{
 	margin-left: auto;
 	margin-right: auto;
+	visibility: hidden;
 }
 
 .about-box{
@@ -246,6 +247,7 @@ nav a:hover{
 	margin-left: auto;
 	margin-right: auto;
 	max-width: calc(320px - 3rem);
+	visibility: hidden;
 }
 
 .about-text{
@@ -263,6 +265,7 @@ nav a:hover{
 
 .about-container img{
 	display: none;
+	visibility: hidden;
 }
 
 @media only screen and (min-width: 1089px){
@@ -341,6 +344,10 @@ nav a:hover{
 }
 
 /* Contact Page. */
+.no-scrollbar{
+	overflow: hidden;
+}
+
 .contact-section{
 	padding-top: 2rem;
 	padding-bottom: 2rem;
@@ -351,6 +358,7 @@ nav a:hover{
 .contact-section h2{
 	margin-left: auto;
 	margin-right: auto;
+	visibility: hidden;
 }
 
 .message-sent-notification{
@@ -370,11 +378,13 @@ nav a:hover{
 
 .contact-container img{
 	display: none;
+	visibility: hidden;
 }
 
 .contact-box{
 	display: block;
 	justify-content: center;
+	visibility: hidden;
 }
 
 label{
@@ -452,6 +462,7 @@ input[type="submit"]:hover{
 	margin-right: 1.5rem;
 	align-items: center;
 	align-content: center;
+	visibility: hidden;
 }
 
 .hero-section h1{

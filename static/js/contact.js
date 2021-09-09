@@ -1,8 +1,14 @@
 var tl = gsap.timeline();
 
-tl.from(".contact-stagger", {
+function init() {
+	tl.from(".contact-stagger", {
 	y: "30%",
-	opacity: 0,
+	autoAlpha: 0,
 	duration: 1,
 	stagger: 0.3
+});
+}
+
+window.addEventListener("load", function(event) {
+	init();
 });

@@ -11,15 +11,16 @@ for (var i = 0; i < heroButtons.length; i++){
 	});
 };
 
-tl.from("#hero-container", {
+function init() {
+	tl.from("#hero-container", {
 	y: "-30%",
-	opacity: 0,
+	autoAlpha:0,
 	duration: 1
 });
 
 tl.from(".stagger1", {
 	y: "-30%",
-	opacity: 0,
+	autoAlpha:0,
 	stagger: 0.3,
 	duration: 0.5
 }, "-=0.5");
@@ -31,7 +32,7 @@ gsap.from("#projects-title", {
 	},
 
 	x: "-30%",
-	opacity: 0
+	autoAlpha:0
 });
 
 gsap.from(".project", {
@@ -41,6 +42,11 @@ gsap.from(".project", {
 	},
 
 	y: "30%",
-	opacity: 0,
+	autoAlpha:0,
 	stagger: 0.3
+});
+}
+
+window.addEventListener("load", function(event){
+	init();
 });
