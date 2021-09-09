@@ -14,7 +14,7 @@ mail_settings = {
     "MAIL_SERVER": "smtp.gmail.com",
     "MAIL_PORT": 587,
     "MAIL_USE_TLS": True,
-    "MAIL_USE_SSL": False,
+    "MAIL_USE_SSL": True,
     "MAIL_USERNAME": email_user,
     "MAIL_PASSWORD": email_pass,
     "MAIL_DEFAULT_SENDER": email_user,
