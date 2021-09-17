@@ -628,6 +628,11 @@ input[type="submit"]:hover{
  	
 	}
 
+	.view-project-button{
+		pointer-events: none;
+		opacity: 0.3;
+	}
+
 	.project p{
 		height: 5%;
 	}
