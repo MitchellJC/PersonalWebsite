@@ -397,7 +397,7 @@ input, textarea{
 	box-sizing: border-box;
 	width: 100%;
 	border-radius: .5em;
-	border: .3em solid grey;
+	border: .15em solid grey;
 	resize: none;
 }
 
@@ -407,12 +407,11 @@ input[type="submit"] {
 	height: 3em;
 	border-radius: 1.5em;
 	width: 10em;
-	border: .3em solid grey;
 }
 
 textarea:focus, input:focus{
     outline: var(--light-blue);
-    border: .3em solid var(--light-blue);
+    border: .15em solid var(--light-blue);
 }
 
 input[type="submit"]:hover{
