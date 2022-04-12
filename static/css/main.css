@@ -580,8 +580,8 @@ input[type="submit"]:hover{
 }
 
 .project-buttons-box a:hover{
-	background-color: white;
-	color: black;
+	background-color: var(--dark-blue);
+	color: var(--light-blue);
 }
 
 	.view-project-button{
