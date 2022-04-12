@@ -536,8 +536,10 @@ input[type="submit"]:hover{
 }
 
 .project{
+	height:auto;
 	background-color: aliceblue;
 	border-radius: 2em;
+	border: 4px solid var(--light-blue);
 	padding: 1rem;
 	margin-left: 1.5rem;
 	margin-right: 1.5rem;
@@ -552,10 +554,9 @@ input[type="submit"]:hover{
   border: 1px solid black;
   background-color: black;
   display: block;
+ 
   margin-left: auto;
- 	margin-right: auto;
- 	position: relative;
- 	bottom: -2em;
+  margin-right: auto;
 }
 
 .project-buttons-box ul{
@@ -564,6 +565,7 @@ input[type="submit"]:hover{
 
 .project-buttons-box li{
 	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
 }
 
 .project-buttons-box a{
