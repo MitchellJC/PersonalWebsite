@@ -539,7 +539,7 @@ input[type="submit"]:hover{
 
 .project{
 	display: grid;
-	grid-template-rows: auto 5rem auto 20rem;
+	grid-template-rows: auto 5rem auto auto;
 
 	background-color: aliceblue;
 
@@ -628,6 +628,7 @@ input[type="submit"]:hover{
 	}
 
 	.project{
+		grid-template-rows: auto 5rem auto 20rem;
 		padding: 3rem; 
 	}
 }
