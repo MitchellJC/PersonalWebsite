@@ -538,17 +538,21 @@ input[type="submit"]:hover{
 }
 
 .project{
-	height:auto;
 	background-color: aliceblue;
 	border-radius: 2em;
 	border: 4px solid var(--light-blue);
 	padding: 1rem;
 	margin-left: 1.5rem;
 	margin-right: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .project p{
+	height: 5rem;
 	color: #373737;
+	overflow-y: auto;
 }
 
 .project img{
@@ -564,11 +568,11 @@ input[type="submit"]:hover{
 
 .project-buttons-box ul{
 	display: block;
+	height: 100%;
 }
-
 .project-buttons-box li{
-	margin-top: 2.5rem;
-	margin-bottom: 2.5rem;
+	margin: 3rem 0 3rem 0;
+	
 }
 
 .project-buttons-box a{
@@ -584,10 +588,10 @@ input[type="submit"]:hover{
 	color: var(--light-blue);
 }
 
-	.view-project-button{
-		pointer-events: none;
-		opacity: 0.3;
-	}
+.view-project-button{
+	pointer-events: none;
+	opacity: 0.3;
+}
 
 @media only screen and (min-width: 994px){
 	.project-grid ul{
@@ -602,11 +606,7 @@ input[type="submit"]:hover{
 	.projects-section h2{
 	text-align: left;
 	margin-left: 7rem;
-}
-
-.project-buttons-box{
-	margin-top: 5rem; 
-}
+	}
 
 	.project-buttons-box ul{
 	display: flex;
@@ -618,16 +618,11 @@ input[type="submit"]:hover{
 
 	.project-buttons-box li{
 	margin-top: 0;
-}
+	}
 
 	.project{
-		padding: 3rem;
+		padding: 3rem; 
 	}
-
-	.project p{
-		height: 5%;
-	}
-
 }
 
 /* Footer Section. */
