@@ -95,7 +95,7 @@ p{
 .navbar-section {
 	position: sticky;
 	top: 0;
-	z-index: 999;
+	z-index: 998;
 }
 
 .navbar{
@@ -132,10 +132,11 @@ p{
 }
 
 nav{
-	z-index: 999;
 	position: fixed;
+	z-index: 999;
 	display: none;
 	background: var(--light-purple);
+	background-image: var(--nav-gradient);
 	width: 100vw;
 	height: auto;
 	text-align: center;
