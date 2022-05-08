@@ -1,4 +1,6 @@
+const REM_SIZE = 16;
 const heroButtons = document.querySelectorAll(".hero-button"); 
+const navbarHeight = document.getElementsByClassName("navbar-section")[0].offsetHeight;
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
 var tl = gsap.timeline();
@@ -7,7 +9,7 @@ for (var i = 0; i < heroButtons.length; i++){
 	let heroButton = heroButtons[i];
 
 	heroButton.addEventListener("click", () => {
-		gsap.to(window, {duration: 0.000001, scrollTo: {y: "#projects-title", offsetY: 50}});
+		gsap.to(window, {duration: 0.000001, scrollTo: {y: "#projects-title", offsetY: navbarHeight + REM_SIZE}});
 	});
 };
 
