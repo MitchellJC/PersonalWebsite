@@ -11,6 +11,7 @@
 	--navbar-height : 5.2rem;
 	--nav-separator-height: 0.4rem;
 	--section-padding: 4rem;
+	--section-padding-shorthand: 4rem 0 4rem 0;
 	--section-min-height: calc(100vh - var(--navbar-height) - var(--nav-separator-height) - 2 * var(--section-padding));
 }
 
@@ -25,6 +26,11 @@ body{
 	margin: 0;
 	background-color: var(--dark-blue);
 	background-image: var(--background-image);
+}
+
+p {
+	/* Recommend length of lines https://www.usability.gov/get-involved/blog/2006/08/line-length-and-onscreen-reading.html#:~:text=The%20best%20available%20research%20suggests,short%20(about%20four%20inches).*/
+	max-width: 10in;
 }
 
 a{
@@ -44,7 +50,7 @@ h3{
 }
 
 section{
-	padding: var(--section-padding);
+	padding: var(--section-padding-shorthand);
 	min-height: var(--section-min-height);
 }
 
@@ -240,6 +246,11 @@ nav a:hover{
 }
 
 /* About Page. */
+.about-section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
 .about-section h2{
 	margin-left: auto;
@@ -250,32 +261,33 @@ nav a:hover{
 .about-box{
 	background: white;
 	border-radius: 3em;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: calc(320px - 3rem);
+	margin: auto auto auto auto;
 	visibility: hidden;
 }
 
 .about-text{
-	padding: 1rem;
+	margin: 0;
+	padding: 2rem;
 }
 
 .about-container {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-gap: 0;
+		display: flex;
+		flex-direction: column;
+		height: 50%;
+		gap: 2rem;
 		margin: 2rem auto 0 auto;
 		width: 90%;
-		justify-items: center;
-	}
+}
 
-
+.about-container img {
+	width: 20rem;
+	max-width: 100%;
+	margin: 0 auto 0 auto;
+}
 
 @media only screen and (min-width: 1089px){
 	.about-container {
-		display: flex;
-		grid-template-columns: 1fr 1fr;
-		grid-gap: 2rem;
+		flex-direction: row;
 		width: 90%;
 		justify-items: center;
 	}
@@ -283,25 +295,13 @@ nav a:hover{
 	.about-container img{
 		display: block;
 		align-self: center;
-		width: 50%;
-	}
-
-	.about-box{
-		max-width: unset;
 	}
 }
 
 @media only screen and (min-width: 698px) and (max-width: 1089px){
 	.about-container {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-gap: 2rem;
-		width: 90%;
+		display: flex;
 		justify-items: center;
-	}
-
-	.about-box{
-		max-width: unset;
 	}
 }
 
@@ -325,7 +325,7 @@ nav a:hover{
 .resume-embed p, .resume-embed a{
 	margin-left: 1.5rem;
 	margin-right: 1.5rem;
-	color: black;
+	color: white;
 }
 
 .resume-embed a:hover{
@@ -336,6 +336,12 @@ nav a:hover{
 .contact-section{
 	background-color: #3f499b;
 	background-image: var(--background-image);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.contact-section .container {
+	width: 90%;
 }
 
 .contact-section h2{
@@ -353,20 +359,25 @@ nav a:hover{
 }
 
 .contact-container{
-	width: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	margin-left: auto;
 	margin-right: auto;
+	width: 100%;
+	max-width: 100%;
 }
 
 .contact-container img{
-	display: none;
-	visibility: hidden;
+	margin: auto auto auto auto;
+	width: 20rem;
+	max-width: 100%;
 }
 
 .contact-box{
-	display: block;
 	justify-content: center;
 	visibility: hidden;
+	width: min(100%, 10in);
 }
 
 label{
@@ -375,11 +386,15 @@ label{
 	margin-bottom: .5em;
 }
 
+form {
+	width: min(100%, 10in);
+}
+
 input, textarea{
 	display: block;
 	margin-bottom: 1.5em;
 	box-sizing: border-box;
-	width: 100%;
+	width: min(100%, 10in);
 	border-radius: .5em;
 	border: .15em solid var(--very-dark-blue);
 	resize: none;
@@ -409,27 +424,11 @@ input[type="submit"]:active{
 
 @media only screen and (min-width: 1089px) {
 	.contact-container {
-		display: flex;
-		gap: 1rem;
-		margin-left: auto;
-		margin-right: auto;
-		width: 90%;
-		justify-items: center;
+		flex-direction: row;
 	}
 
-	.contact-box{
-		width: 100%;
-	}
-
-	.contact-container img{
-		display: block;
-		position: relative;
-		top: -3rem;
-	}
-
-	.contact-input{
-		width: 100%;
-		height: 40%;
+	.contact-container img {
+		margin: auto 0 auto 0;
 	}
 }
 /* Home Page. */
@@ -525,14 +524,14 @@ input[type="submit"]:active{
 	display: grid;
 	grid-template-rows: auto auto;
 	grid-gap: 1rem;
+	width: 90%;
+	margin: 0 auto 0 auto;
 }
 
 .project{
 	display: grid;
 	grid-template-rows: auto 5rem auto auto;
-
 	background-color: aliceblue;
-
 	border-radius: 2em;
 	border: 4px solid var(--light-blue);
 	padding: 1rem;
@@ -592,12 +591,6 @@ input[type="submit"]:active{
 	.project-grid ul{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	 
-	}
-
-	.projects-section h2{
-	text-align: left;
-	margin-left: 7rem;
 	}
 
 	.project-buttons-box ul{

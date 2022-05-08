@@ -33,8 +33,10 @@ gsap.from("#projects-title", {
 		start: "top bottom"
 	},
 
-	x: "-30%",
-	autoAlpha:0
+	y: "-30%",
+	autoAlpha: 0,
+	duration: 1,
+	stagger: 0.3
 });
 
 gsap.from(".project", {
