@@ -132,7 +132,8 @@ p{
 }
 
 nav{
-	position: fixed;
+	position: absolute;
+	top: 0;
 	z-index: 999;
 	display: none;
 	background: var(--light-purple);
