@@ -1,81 +1,153 @@
 <!DOCTYPE html>
 <html lang="eng">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width initial-scale=1.0">
-	<title>{% block title %}{% endblock %} | Mitchεll Clλrk</title>
-	<link rel="icon" href="/static/images/icon.ico">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-	<script src="/static/js/navbar.js" defer></script>
-	{% block head %}
-	{% endblock %}
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <title>{% block title %}{% endblock %} | Mitchεll Clλrk</title>
+    <link rel="icon" href="/static/images/icon.ico" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css') }}"
+    />
+    <script src="/static/js/navbar.js" defer></script>
+    {% block head %} {% endblock %}
+  </head>
 
-<body {% block body_class %}{% endblock %}>
-<div class="navbar-section">
-	<div class="navbar">
-		<div class="container">
-			<a class="logo" href="/">Mitchεll Clλrk</a>
+  <body {% block body_class %}{% endblock %}>
+    <div class="navbar-section">
+      <div class="navbar">
+        <div class="container">
+          <a class="logo" href="/">Mitchεll Clλrk</a>
 
-			<svg id="mobile-menu" class="mobile-menu" width="34" height="39" viewBox="0 0 34 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<path d="M34 4.70001H-2V11.9H34V4.70001Z" fill="#F9A1A1"/>
-			<path d="M34 15.9H-2V23.1H34V15.9Z" fill="#F9A1A1"/>
-			<path d="M34 27.1H-2V34.3H34V27.1Z" fill="#F9A1A1"/>
-			</svg>
+          <svg
+            id="mobile-menu"
+            class="mobile-menu"
+            width="34"
+            height="39"
+            viewBox="0 0 34 39"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M34 4.70001H-2V11.9H34V4.70001Z" fill="#F9A1A1" />
+            <path d="M34 15.9H-2V23.1H34V15.9Z" fill="#F9A1A1" />
+            <path d="M34 27.1H-2V34.3H34V27.1Z" fill="#F9A1A1" />
+          </svg>
 
-			<nav>
-				<div class="container">
-					<a class="mobile-logo" href="/">Mitchεll Clλrk</a>
-					<svg id="mobile-menu-exit" class="mobile-menu-exit" width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M30.5469 25.4558L5.09104 0L-0.00012207 5.09117L25.4557 30.547L30.5469 25.4558Z" fill="#F9A1A1"/>
-					<path d="M26.1823 0.22653L0.72644 25.6824L5.81761 30.7735L31.2735 5.3177L26.1823 0.22653Z" fill="#F9A1A1"/>
-					</svg>
-				</div>
+          <nav>
+            <div class="container">
+              <a class="mobile-logo" href="/">Mitchεll Clλrk</a>
+              <svg
+                id="mobile-menu-exit"
+                class="mobile-menu-exit"
+                width="32"
+                height="31"
+                viewBox="0 0 32 31"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M30.5469 25.4558L5.09104 0L-0.00012207 5.09117L25.4557 30.547L30.5469 25.4558Z"
+                  fill="#F9A1A1"
+                />
+                <path
+                  d="M26.1823 0.22653L0.72644 25.6824L5.81761 30.7735L31.2735 5.3177L26.1823 0.22653Z"
+                  fill="#F9A1A1"
+                />
+              </svg>
+            </div>
 
-				<ul>
-					<li><a {% block home_active %}{% endblock %} href="/">Home</a></li>
-					<li><a {% block about_active %}{% endblock %} href="/about">About</a></li>
-					<li><a {% block contact_active %}{% endblock %} href="/contact">Contact</a></li>
-					<li><a {% block resume_active %}{% endblock %} href="/resume">Resume</a></li>
-				</ul>
-				<div class="external-nav-mobile">
-				<ul>
-					<li>
-						<a href="https://github.com/MitchellJC" target=”blank” rel="noopener noreferrer">
-							<img class="external-image" src="/static/images/github-logo.png">
-						</a>
-					</li>
-					<li>
-						<a href="https://www.linkedin.com/in/mitchell-clark-824631194/" target=”blank” rel="noopener noreferrer">
-							<img class="external-image" src="/static/images/linkedin-logo.png">
-						</a>
-					</li>
-				</ul>
-				<div class="navbar-separator"></div>
-			</div>
-			</nav>	
-			<div id="external-nav" class="external-nav">
-				<ul>
-					<li>
-						<a href="https://github.com/MitchellJC" target=”blank” rel="noopener noreferrer">
-							<img class="external-image" src="/static/images/github-logo.png">
-						</a>
-					</li>
-					<li>
-						<a href="https://www.linkedin.com/in/mitchell-clark-824631194/" target=”_blank” rel="noopener noreferrer">
-							<img class="external-image" src="/static/images/linkedin-logo.png">
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+            <ul>
+              <li>
+                <a {% block home_active %}{% endblock %} href="/">Home</a>
+              </li>
+              <li>
+                <a {% block about_active %}{% endblock %} href="/about"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a {% block contact_active %}{% endblock %} href="/contact"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a {% block resume_active %}{% endblock %} href="/resume"
+                  >Resume</a
+                >
+              </li>
+            </ul>
+            <div class="external-nav-mobile">
+              <ul>
+                <li>
+                  <a
+                    href="https://github.com/MitchellJC"
+                    target="”blank”"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      class="external-image"
+                      src="/static/images/github-logo.png"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/mitchell-clark-824631194/"
+                    target="”blank”"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      class="external-image"
+                      src="/static/images/linkedin-logo.png"
+                    />
+                  </a>
+                </li>
+              </ul>
+              <div class="navbar-separator"></div>
+            </div>
+          </nav>
+          <div id="external-nav" class="external-nav">
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/MitchellJC"
+                  target="”blank”"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="external-image"
+                    src="/static/images/github-logo.png"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/mitchell-clark-824631194/"
+                  target="”_blank”"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="external-image"
+                    src="/static/images/linkedin-logo.png"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-	<div class="navbar-separator"></div>	
-</div>
-	{% block content %}
-	{% endblock %}
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js" crossorigin="anonymous"></script>	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollToPlugin.min.js"></script>
-</body>
+      <div class="navbar-separator"></div>
+    </div>
+    {% block content %} {% endblock %}
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollToPlugin.min.js"></script>
+  </body>
+</html>

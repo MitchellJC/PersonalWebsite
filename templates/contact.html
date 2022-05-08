@@ -1,45 +1,35 @@
-{% extends "base.html" %}
-
-{% block title %}Contact{% endblock %}
-
-{% block head %}
+{% extends "base.html" %} {% block title %}Contact{% endblock %} {% block head
+%}
 <script src="/static/js/contact.js" defer></script>
-{% endblock %}
-
-{% block contact_active %}class="active-page"{% endblock %}
-{% block body_class %}class="no-scrollbar"{% endblock %}
-
-{% block content %}
-	{% with messages = get_flashed_messages() %}
-		{% if messages %}
-			{% for message in messages %}
-				<p class=message-sent-notification>{{message}}</p>
-			{% endfor %}
-		{% endif %}
-	{% endwith %}	
+{% endblock %} {% block contact_active %}class="active-page"{% endblock %} {%
+block body_class %}class="no-scrollbar"{% endblock %} {% block content %} {%
+with messages = get_flashed_messages() %} {% if messages %} {% for message in
+messages %}
+<p class="message-sent-notification">{{message}}</p>
+{% endfor %} {% endif %} {% endwith %}
 
 <section class="contact-section">
-		<div class="container">
-			<h2 class="contact-stagger">Contact</h2>
+  <div class="container">
+    <h2 class="contact-stagger">Contact</h2>
 
-			<div class="contact-container">
-				<div class="contact-box contact-stagger">
-					<form action="#" method="post">
-						<label for="name">Name</label>
-						<input type="text" class="contact-input" id="name" name="name">
+    <div class="contact-container">
+      <img class="contact-stagger" src="/static/images/mail.svg" />
 
-						<label for="email">Email</label>
-						<input type="email" class="contact-input" id="email" name="email">
+      <div class="contact-box contact-stagger">
+        <form action="#" method="post">
+          <label for="name">Name</label>
+          <input type="text" class="contact-input" id="name" name="name" />
 
-						<label for="message">Message</label>
-						<textarea name="message" cols="30" rows="10"></textarea>
+          <label for="email">Email</label>
+          <input type="email" class="contact-input" id="email" name="email" />
 
-						<input type="submit" class="send-message-cta" value="Send Message">
-					</form>
-				</div>
+          <label for="message">Message</label>
+          <textarea name="message" cols="30" rows="10"></textarea>
 
-				<img class="contact-stagger" src="/static/images/mail.svg">
-			</div>
-		</div>
-	</section>
+          <input type="submit" class="send-message-cta" value="Send Message" />
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 {% endblock %}
