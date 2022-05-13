@@ -631,7 +631,7 @@ input[type="submit"]:active{
 /* Footer Section. */
 .footer-section{
 	background: var(--very-dark-blue);
-	background-image: var(--background-image), radial-gradient(circle, var(--transparent-very-dark-blue) 80%, var(--transparent-light-blue));
+	background-image: var(--background-image), radial-gradient(circle, var(--transparent-very-dark-blue) 100%, var(--transparent-light-blue));
 	min-height: 0;
 }
 
