@@ -328,15 +328,18 @@ nav a:hover{
 .course-description-box {
 	display: block;
 	background-color: rgb(77, 99, 119);
+	overflow-y: hidden;
 	max-height: 0;
 }
 
+.course-box-open {
+	max-height: 30rem;
+	border: black;
+}
+
 .course-description {
-	box-sizing: border-box;
 	margin: 0;
 	background-color: rgb(77, 99, 119);
-	max-height: 0;
-	overflow-y: hidden;
 }
 
 @media only screen and (max-width: 800px){
