@@ -293,6 +293,10 @@ nav a:hover{
 	margin: 0 auto 0 auto;
 }
 
+.course-stagger {
+	margin-left: 0;
+}
+
 .course-section {
 	color: white;
 	background-color: var(--very-dark-blue);
@@ -300,6 +304,7 @@ nav a:hover{
 }
 
 .course-group {
+	display: block;
 	border-radius: 2rem;
 	padding: 1rem;
 	margin: 0 auto 0 auto;
@@ -308,10 +313,36 @@ nav a:hover{
 }
 
 .course-title {
-	width: 100%;
+	display: block;
 	background-color: rgb(77, 99, 119);
 	padding: 1rem;
 	box-shadow: #373737;
+}
+
+.course-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
+
+.course-description-box {
+	display: block;
+	background-color: rgb(77, 99, 119);
+	max-height: 0;
+}
+
+.course-description {
+	box-sizing: border-box;
+	margin: 0;
+	background-color: rgb(77, 99, 119);
+	max-height: 0;
+	overflow-y: hidden;
+}
+
+@media only screen and (max-width: 800px){
+	.course-grid {
+		grid-template-columns: 1fr;
+	}
 }
 
 @media only screen and (min-width: 1089px){
