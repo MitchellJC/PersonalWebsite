@@ -4,6 +4,7 @@
 	--dark-blue: #3F499B;
 	--light-purple: #6C74B2;
 	--very-dark-blue: #292a57;
+	--group-background-colour: rgb(90, 115, 138);
 
 	--transparent-light-blue: #83c2d088;
 	--transparent-very-dark-blue: #292a5750;
@@ -37,6 +38,8 @@ body{
 p {
 	/* Recommend length of lines https://www.usability.gov/get-involved/blog/2006/08/line-length-and-onscreen-reading.html#:~:text=The%20best%20available%20research%20suggests,short%20(about%20four%20inches).*/
 	max-width: 10in;
+	overflow-wrap: break-word;
+	font-size: 100%;
 }
 
 a{
@@ -84,11 +87,6 @@ h4{
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 4rem;
-}
-
-p{
-	overflow-wrap: break-word;
-	font-size: 100%;
 }
 
 /* Navbar. */
@@ -293,6 +291,27 @@ nav a:hover{
 	width: 20rem;
 	max-width: 100%;
 	margin: 0 auto 0 auto;
+}
+
+.course-section {
+	color: white;
+	background-color: var(--very-dark-blue);
+	background-image: var(--project-background-image);
+}
+
+.course-group {
+	border-radius: 2rem;
+	padding: 1rem;
+	margin: 0 auto 0 auto;
+	width: 90%;
+	background-color: var(--group-background-colour);
+}
+
+.course-title {
+	width: 100%;
+	background-color: rgb(77, 99, 119);
+	padding: 1rem;
+	box-shadow: #373737;
 }
 
 @media only screen and (min-width: 1089px){
@@ -546,7 +565,7 @@ input[type="submit"]:active{
 .project{
 	display: grid;
 	grid-template-rows: auto 5rem auto auto;
-	background-color: rgb(90, 115, 138);
+	background-color: var(--group-background-colour);
 	border-radius: 2em;
 	padding: 1rem;
 }
