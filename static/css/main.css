@@ -58,6 +58,7 @@ h3{
 	color: white;
 	font-weight: normal;
 	font-size: x-large;
+	margin: 0 0 1rem 0;
 }
 
 section{
@@ -268,7 +269,7 @@ nav a:hover{
 
 .about-box{
 	background: white;
-	border-radius: 3em;
+	border-radius: 1rem;
 	margin: auto auto auto auto;
 	visibility: hidden;
 }
@@ -305,7 +306,7 @@ nav a:hover{
 
 .course-group {
 	display: block;
-	border-radius: 2rem;
+	border-radius: 1rem;
 	padding: 1rem;
 	margin: 1rem auto 1rem auto;
 	width: 90%;
@@ -614,7 +615,7 @@ input[type="submit"]:active{
 	display: grid;
 	grid-template-rows: auto 5rem auto auto;
 	background-color: var(--group-background-colour);
-	border-radius: 2em;
+	border-radius: 1em;
 	padding: 1rem;
 }
 
@@ -690,7 +691,7 @@ input[type="submit"]:active{
 
 	.project{
 		grid-template-rows: auto 5rem auto 20rem;
-		padding: 3rem; 
+		padding: 1rem; 
 	}
 }
 
