@@ -358,6 +358,11 @@ nav a:hover{
 	background-color: rgb(63, 80, 97);
 }
 
+.course-description a {
+	color: rgb(220, 223, 252);
+	text-decoration: underline;
+}
+
 .stat-courses {
 	background-color: rgb(70, 107, 87);
 }
