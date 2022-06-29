@@ -11,12 +11,12 @@ function init() {
 	});
 
 	(function(){
-		console.log("HELOO")
-		const courses = document.getElementsByTagName("course");
-		console.log(courses)
+		const courses = document.getElementsByClassName("course");
+		console.log(courses);
+
 		// Connect each course to its description                     
 		for (const course of courses) {
-			const title = course.getElementsByTagName("course-title")[0];
+			const title = course.getElementsByClassName("course-title")[0];
 			const description = course.getElementsByClassName("course-description-box")[0];
 	
 			title.addEventListener("click", () => {
