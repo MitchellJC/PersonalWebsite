@@ -349,7 +349,7 @@ nav a:hover{
 	transition: max-height 0.5s;
 	max-height: 30rem;
 	border: black;
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 
 .course-description {
