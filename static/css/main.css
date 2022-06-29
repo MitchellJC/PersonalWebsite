@@ -711,7 +711,10 @@ input[type="submit"]:active{
 	color: var(--light-blue);
 }
 
-
+.project-buttons-box a:active{
+	background-color: #363e81;
+	color: var(--light-blue);
+}
 
 .view-project-button{
 	pointer-events: none;
