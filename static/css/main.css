@@ -342,11 +342,11 @@ nav a:hover{
 	box-shadow: #373737 0.1rem 0rem 0.1rem;
 	overflow-y: hidden;
 	max-height: 0;
-	transition: max-height 1s;
+	transition: max-height 0.25s;
 }
 
 .course-box-open {
-	transition: max-height 1s;
+	transition: max-height 0.5s;
 	max-height: 30rem;
 	border: black;
 }
