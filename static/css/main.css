@@ -660,14 +660,13 @@ input[type="submit"]:active{
 
 .project{
 	display: grid;
-	grid-template-rows: auto 5rem auto auto;
+	grid-template-rows: auto auto auto auto;
 	background-color: var(--group-background-colour);
 	border-radius: 1em;
 	padding: 1rem;
 }
 
 .project p{
-	height: 5rem;
 	color: #e7e7e7;
 	overflow-y: auto;
 	margin: 0;
@@ -740,7 +739,7 @@ input[type="submit"]:active{
 	}
 
 	.project{
-		grid-template-rows: auto 5rem auto 20rem;
+		grid-template-rows: auto auto auto auto;
 		padding: 1rem; 
 	}
 }
