@@ -307,7 +307,7 @@ nav a:hover{
 	display: block;
 	border-radius: 2rem;
 	padding: 1rem;
-	margin: 0 auto 0 auto;
+	margin: 1rem auto 1rem auto;
 	width: 90%;
 	background-color: var(--group-background-colour);
 }
@@ -317,6 +317,7 @@ nav a:hover{
 	background-color: rgb(77, 99, 119);
 	padding: 1rem;
 	box-shadow: #373737 0.1rem 0.1rem 0.1rem;
+	user-select: none;
 }
 
 .course-title:hover {
