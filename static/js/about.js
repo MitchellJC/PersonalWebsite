@@ -1,6 +1,5 @@
-
-
 var tl = gsap.timeline();
+gsap.registerPlugin(ScrollTrigger);
 
 function init() {
 	tl.from(".about-stagger", {
@@ -9,6 +8,29 @@ function init() {
 		duration: 1,
 		stagger: 0.3
 	});
+
+	gsap.from("#course-section-title", {
+        scrollTrigger: {
+            trigger: "#course-section-title",
+            start: "top bottom"
+        },
+
+        y: "-30%",
+        autoAlpha: 0,
+        duration: 1,
+        stagger: 0.3
+    });
+
+    gsap.from(".course-group", {
+        scrollTrigger: {
+            trigger: ".course-group",
+            start: "top bottom"
+        },
+
+        y: "30%",
+        autoAlpha:0,
+        stagger: 0.3
+    });
 
 	(function(){
 		const courses = document.getElementsByClassName("course");
