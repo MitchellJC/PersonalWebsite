@@ -316,7 +316,16 @@ nav a:hover{
 	display: block;
 	background-color: rgb(77, 99, 119);
 	padding: 1rem;
-	box-shadow: #373737;
+	box-shadow: #373737 0.1rem 0.1rem 0.1rem;
+}
+
+.course-title:hover {
+	cursor: pointer;
+	background-color: rgb(71, 90, 109);
+}
+
+.course-title:active {
+	background-color: rgb(63, 80, 97);
 }
 
 .course-grid {
@@ -327,12 +336,15 @@ nav a:hover{
 
 .course-description-box {
 	display: block;
-	background-color: rgb(77, 99, 119);
+	background-color: rgb(70, 89, 107);
+	box-shadow: #373737 0.1rem 0rem 0.1rem;
 	overflow-y: hidden;
 	max-height: 0;
+	transition: max-height 1s;
 }
 
 .course-box-open {
+	transition: max-height 1s;
 	max-height: 30rem;
 	border: black;
 }
@@ -340,7 +352,7 @@ nav a:hover{
 .course-description {
 	padding: 1rem;
 	margin: 0;
-	background-color: rgb(77, 99, 119);
+	background-color: rgb(70, 89, 107);
 }
 
 @media only screen and (max-width: 800px){
