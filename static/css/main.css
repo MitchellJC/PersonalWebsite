@@ -349,12 +349,59 @@ nav a:hover{
 	transition: max-height 0.5s;
 	max-height: 30rem;
 	border: black;
+	overflow-y: scroll;
 }
 
 .course-description {
 	padding: 1rem;
 	margin: 0;
-	background-color: rgb(70, 89, 107);
+	background-color: rgb(63, 80, 97);
+}
+
+.stat-courses {
+	background-color: rgb(70, 107, 87);
+}
+
+.stat-courses .course-title {
+	background-color: rgb(64, 99, 75);
+}
+
+.stat-courses .course-title:hover {
+	background-color: rgb(58, 90, 68);
+}
+
+.stat-courses .course-title:active {
+	background-color: rgb(53, 82, 62);
+}
+
+.stat-courses .course-description {
+	background-color: rgb(44, 68, 51);
+}
+
+.computer-courses {
+	background-color: rgb(94, 107, 70);
+}
+
+.computer-courses .course-title {
+	background-color: rgb(82, 94, 61);
+}
+
+.computer-courses .course-title:hover {
+	background-color: rgb(71, 82, 53);
+}
+
+.computer-courses .course-title:active {
+	background-color: rgb(59, 68, 44);
+}
+
+.computer-courses .course-description {
+	background-color: rgb(59, 68, 44);
+}
+
+@media only screen and (max-width: 400px){
+	.course {
+		width: 90%;
+	}
 }
 
 @media only screen and (max-width: 800px){
