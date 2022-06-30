@@ -724,11 +724,6 @@ input[type="submit"]:active{
 	color: var(--light-blue);
 }
 
-.view-project-button{
-	pointer-events: none;
-	opacity: 0.3;
-}
-
 @media only screen and (min-width: 994px){
 	.project-grid ul{
 	display: grid;
