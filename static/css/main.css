@@ -490,7 +490,8 @@ nav a:hover{
 	color: var(--light-blue);
 	background-color: black;
 	text-align: center;
-	margin: 0;
+	margin: 0 auto 0 auto;
+	width: 100%;
 	padding: 1em;
 }
 
