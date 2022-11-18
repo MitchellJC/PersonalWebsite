@@ -359,7 +359,7 @@ nav a:hover{
 .course-description {
 	padding: 1rem;
 	margin: 0;
-	background-color: rgb(63, 80, 97);
+	/* background-color: rgb(63, 80, 97); */
 }
 
 .course-description a {
