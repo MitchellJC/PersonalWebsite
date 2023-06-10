@@ -255,6 +255,11 @@ nav a:hover{
 }
 
 /* About Page. */
+#course-nav-button {
+	margin-top: 5%;
+
+}
+
 .about-section {
 	display: flex;
 	align-items: center;
