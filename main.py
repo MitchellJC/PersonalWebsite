@@ -3,7 +3,8 @@
 __author__ = "Mitchell Clark"
 
 import os
-from flask import Flask, render_template, send_from_directory, url_for, request, flash, redirect
+from flask import (Flask, render_template, send_from_directory, url_for, 
+		   request, flash, redirect)
 from flask_mail import Mail, Message
 
 email_user = os.environ.get("EMAIL_USER")
@@ -30,17 +31,17 @@ mail = Mail(app)
 
 @app.route("/")
 def home():
-	"""First page opened on website. Contains showcased projects."""
+	"""Serve index page, contains showcased projects."""
 	return render_template("index.html")
 
 @app.route("/about")
 def about_me():
-	"""Page containing short paragraph about myself."""
+	"""Serve page containing short paragraph about myself."""
 	return render_template("about.html")
 
 @app.route("/contact", methods=["GET" ,"POST"])
 def contact_me():
-	"""Page containing a form to send emails to me."""
+	"""Serve page containing a form to send emails to me."""
 	if request.method == "POST":
 		name_text = request.form["name"]
 		email_text = request.form["email"]
@@ -53,11 +54,6 @@ def contact_me():
 		return redirect(url_for("contact_me"))
 	else:
 		return render_template("contact.html")
-
-@app.route("/resume")
-def resume():
-	"""Page containing my resume."""
-	return render_template("resume.html")
 
 if __name__ == "__main__":
 	app.run(debug=True) # Turn off for deployment.

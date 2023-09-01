@@ -2,6 +2,7 @@
 <script src="/static/js/homepage.js" defer></script>
 {% endblock %} {% block body_class %}class="home-body"{% endblock %} {% block
 home_active %}class="active-page"{% endblock %} {% block content %}
+<!-- Hero -->
 <section class="hero-section">
   <div id="hero-container" class="container">
     <div class="left-col stagger1">
@@ -24,90 +25,14 @@ home_active %}class="active-page"{% endblock %} {% block content %}
   </div>
 </section>
 
+<!-- Projects -->
 <section class="projects-section">
   <div class="container">
     <h2 id="projects-title">Projects</h2>
 
     <div class="project-grid">
       <ul>
-        <li id="minigolf-project" class="project">
-          <h3>Mighty Mini Golf</h3>
-          <p>Booking and contact website frontend for mini golf company.</p>
-
-          <div class="project-buttons-box">
-            <ul>
-              <li>
-                <a
-                  href="https://github.com/MitchellJC/mightyMiniGolf"
-                  target="blank"
-                  rel="noopener noreferrer"
-                  >View Code</a
-                >
-              </li>
-
-              <li class="view-project-button">
-                <a
-                  href="https://mitchelljc.github.io/mightyMiniGolf/html/index.html"
-                  target="blank"
-                  rel="noopener noreferrer"
-                  >View Project</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <img src="/static/images/MMM-screenshot.PNG" />
-        </li>
-
-        <!-- <li id="calculator-project" class="project">
-          <h3>Scientific Calculator</h3>
-          <p>
-            Scientific calculator for desktop. Based on the CASIO fx82-AU II.
-          </p>
-
-          <div class="project-buttons-box">
-            <ul>
-              <li>
-                <a
-                  href="https://github.com/MitchellJC/ScientificCalculator"
-                  target="blank"
-                  rel="noopener noreferrer"
-                  >View Code</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <img src="/static/images/calculator.PNG" />
-        </li> -->
-
-        <li id="portfolio-website-project" class="project">
-          <h3>Personal Website</h3>
-          <p>
-            Responsive personal website made in Python (Flask), HTML, JavaScript
-            and CSS. Designed to support screen sizes from 320px wide.
-          </p>
-
-          <div class="project-buttons-box">
-            <ul>
-              <li>
-                <a
-                  href="https://github.com/MitchellJC/PersonalWebsite"
-                  target="blank"
-                  rel="noopener noreferrer"
-                  >View Code</a
-                >
-              </li>
-              
-            </ul>
-          </div>
-
-          <img
-            id="website-screenshot"
-            src="/static/images/navbar-screenshot.png"
-          />
-        </li>
-
+        <!-- Game Gabbler project -->
         <li id="game-rec-project" class="project">
           <h3>Game Gabbler</h3>
           <p>
@@ -141,6 +66,66 @@ home_active %}class="active-page"{% endblock %} {% block content %}
             src="/static/images/game-rec.png"
           />
         </li>
+
+        <!-- Mighty Mini Golf -->
+        <li id="minigolf-project" class="project">
+          <h3>Mighty Mini Golf</h3>
+          <p>Booking and contact website frontend for mini golf company.</p>
+
+          <div class="project-buttons-box">
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/MitchellJC/mightyMiniGolf"
+                  target="blank"
+                  rel="noopener noreferrer"
+                  >View Code</a
+                >
+              </li>
+
+              <li class="view-project-button">
+                <a
+                  href="https://mitchelljc.github.io/mightyMiniGolf/html/index.html"
+                  target="blank"
+                  rel="noopener noreferrer"
+                  >View Project</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <img src="/static/images/MMM-screenshot.PNG" />
+        </li>
+
+        <!-- Portfolio website -->
+        <li id="portfolio-website-project" class="project">
+          <h3>Personal Website</h3>
+          <p>
+            Responsive personal website made in Python (Flask), HTML, JavaScript
+            and CSS. Designed to support screen sizes from 320px wide.
+          </p>
+
+          <div class="project-buttons-box">
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/MitchellJC/PersonalWebsite"
+                  target="blank"
+                  rel="noopener noreferrer"
+                  >View Code</a
+                >
+              </li>
+              
+            </ul>
+          </div>
+
+          <img
+            id="website-screenshot"
+            src="/static/images/navbar-screenshot.png"
+          />
+        </li>
+
+        
       </ul>
     </div>
   </div>

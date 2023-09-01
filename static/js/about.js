@@ -10,7 +10,9 @@ function init() {
 		let heroButton = heroButtons[i];
 	
 		heroButton.addEventListener("click", () => {
-			gsap.to(window, {duration: 0.000001, scrollTo: {y: "#course-section-title", offsetY: navbarHeight + REM_SIZE}});
+			gsap.to(window, {duration: 0.000001, 
+				scrollTo: {y: "#course-section-title",
+				offsetY: navbarHeight + REM_SIZE}});
 		});
 	};
 
