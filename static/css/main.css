@@ -299,6 +299,10 @@ nav a:hover{
 	margin: 0 auto 0 auto;
 }
 
+.about-container img{
+	display: none;
+}
+
 .course-stagger {
 	margin-left: 0;
 }
@@ -511,6 +515,7 @@ nav a:hover{
 }
 
 .contact-container img{
+	display: none;
 	margin: auto auto auto auto;
 	width: 20rem;
 	max-width: 100%;
@@ -573,6 +578,7 @@ input[type="submit"]:active{
 	}
 
 	.contact-container img {
+		display: block;
 		margin: auto 0 auto 0;
 	}
 }
