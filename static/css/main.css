@@ -539,7 +539,7 @@ nav a:hover{
 
 label{
 	display: block;
-	color: var(--pink);
+	color: silver;
 	margin-bottom: .5em;
 }
 
@@ -562,7 +562,7 @@ input, textarea{
 
 input[type="submit"] {
 	background-color: black;
-	color: var(--pink);
+	color: white;
 	height: 3em;
 	border-radius: 1.5em;
 	width: 10em;
