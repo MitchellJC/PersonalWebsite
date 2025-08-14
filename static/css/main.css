@@ -737,6 +737,18 @@ input[type="submit"]:active{
 	color: var(--light-blue);
 }
 
+/* Disabled button */
+.disabled-button a{
+	background-color: grey;
+	color: white;
+	user-select: none;
+}
+.disabled-button a:hover{
+	cursor: not-allowed;
+	background-color: grey;
+	color: white;
+}
+
 @media only screen and (min-width: 994px){
 	.project-grid ul{
 	display: grid;
