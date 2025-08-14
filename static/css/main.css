@@ -5,6 +5,7 @@
 	--light-purple: #6C74B2;
 	--very-dark-blue: #292a57;
 	--group-background-colour: rgb(90, 115, 138);
+	--button-active-grey: #373737; 
 
 	--transparent-light-blue: #83c2d088;
 	--transparent-very-dark-blue: #292a5750;
@@ -89,6 +90,14 @@ h4{
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 4rem;
+}
+
+.hoverable-button a:hover{
+	border: .15em solid var(--light-blue);
+}
+
+.hoverable-button a:active{
+	background-color: #373737;
 }
 
 /* Navbar. */
@@ -623,12 +632,16 @@ input[type="submit"]:active{
 	margin-right: auto;
 	width: 12em;
 	border-radius: 1.5em;
+	border: .17em solid black;
 }
 
 .hero-button:hover{
-	color: black;
-	background-color: white;
+	border: .17em solid var(--light-blue);
 	cursor: pointer;
+}
+
+.hero-button:active {
+	background-color: var(--button-active-grey);
 }
 
 #hero-button-desktop{
@@ -727,25 +740,26 @@ input[type="submit"]:active{
 	border-radius: 2.5em;
 	padding: 1rem;
 	font-size: .75em;
+	border: .17em solid black;
 }
 
 .project-buttons-box a:hover{
-	background-color: var(--dark-blue);
-	color: var(--light-blue);
+	border: .17em solid var(--light-blue);
 }
 
 .project-buttons-box a:active{
-	background-color: #363e81;
-	color: var(--light-blue);
+	background-color: var(--button-active-grey);
 }
 
 /* Disabled button */
 .disabled-button a{
+	border: .17em solid grey;
 	background-color: grey;
 	color: white;
 	user-select: none;
 }
 .disabled-button a:hover{
+	border: .17em solid grey;
 	cursor: not-allowed;
 	background-color: grey;
 	color: white;
@@ -801,12 +815,11 @@ input[type="submit"]:active{
 }
 
 .footer-cta-buttons a:hover{
-	text-align: center;
 	border: .15em solid var(--light-blue);
 }
 
 .footer-cta-buttons a:active{
-	background-color: #373737;
+	background-color: var(--button-active-grey);
 }
 
 @media only screen and (min-width: 768px){
