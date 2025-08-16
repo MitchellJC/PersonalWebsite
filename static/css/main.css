@@ -710,11 +710,10 @@ input[type="submit"]:active{
 
 .project img{
 	outline-color: black;
-	border: 1px solid black;
-	background-color: black;
 	display: block;
 	max-height: 100%;
 	max-width: 100%;
+	object-fit: contain;
 	width: 396px;
 
 	margin: auto;
@@ -727,8 +726,7 @@ input[type="submit"]:active{
 .project-buttons-box ul{
 	margin: 2rem 0 2rem 0;
 	display: flex;
-	flex-direction: column;
-	gap: 3rem;
+	flex-direction: row;
 }
 .project-buttons-box li{
 	height: fit-content;
