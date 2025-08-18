@@ -81,6 +81,34 @@ home_active %}class="active-page"{% endblock %} {% block content %}
           </project-box-element>
         </li>
 
+        <!-- Sitting Desktop Garden -->
+        <li>
+          <project-box-element
+            code-href="https://github.com/LimaoC/sitting-desktop-garden/tree/main/client/models"
+            project-href="https://github.com/LimaoC/sitting-desktop-garden/tree/main"
+            img-src="static/images/sdg-thumbnail.png"
+          >
+            <span slot="heading">Sitting Desktop Garden</span>
+            <span slot="desc">
+              Prototype for a posture tracking companion for desk use. Applies
+              computer vision for face detection login and posture tracking.
+              Plant "grows" (rises) when posture is good for a period of time.
+              Plant "wilts" (descends) when posture is bad for a period of time.
+              A connected mousepad gently vibrates when posture is first
+              recognised as bad. Digital screen shows plot of historical posture
+              data and assists with other user interaction such as logging in.
+              Controlled by a Raspberry Pi and implemented using Python, SQLite,
+              MediaPipe Pose, Dlib and PiicoDev.
+              <br /><br />
+              Personal contributions include a module for connecting to SQLite
+              database to store posture data, asynchronous system for posture
+              tracking with Google's MediaPipe API and applied face detection
+              for login via saved embeddings using Dlib's Histogram of Oriented
+              Gradients (HOG) model.
+            </span>
+          </project-box-element>
+        </li>
+
         <!-- Super Resolution For Satellite Imagery project -->
         <li>
           <project-box-element
