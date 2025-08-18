@@ -783,7 +783,17 @@ input[type="submit"]:active {
   .project {
     grid-template-rows: auto auto auto auto;
     padding: 1rem;
-    height: 500px;
+  }
+
+  .project-text-box {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+  }
+
+  .project-desc-box {
+    overflow-y: auto;
+    align-content: center;
   }
 }
 
