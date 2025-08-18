@@ -15,8 +15,9 @@ class ProjectBoxElement extends HTMLElement {
 
     // Project link
     const projectAnchor = shadow.getElementById("project-anchor");
-    if (this.getAttribute("disabled") !== null) {
-      projectAnchor.classList.add("disabled-button");
+    const projectButtonClass = this.getAttribute("project-button-class");
+    if (projectButtonClass !== null) {
+      projectAnchor.classList.add(projectButtonClass);
     } else {
       projectAnchor.setAttribute("href", this.getAttribute("project-href"));
     }

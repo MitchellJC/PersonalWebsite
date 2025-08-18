@@ -65,7 +65,7 @@ home_active %}class="active-page"{% endblock %} {% block content %}
           <project-box-element
             code-href="https://github.com/MitchellJC/game-rec-app"
             img-src="static/images/game-rec.png"
-            disabled
+            project-button-class="disabled-button"
           >
             <span slot="heading">Game Gabbler</span>
             <span slot="desc">
@@ -87,15 +87,15 @@ home_active %}class="active-page"{% endblock %} {% block content %}
             code-href="https://github.com/LimaoC/sitting-desktop-garden/tree/main/client/models"
             project-href="https://github.com/LimaoC/sitting-desktop-garden/tree/main"
             img-src="static/images/sdg-thumbnail.png"
-            disabled
+            project-button-class="invisible-button"
           >
             <span slot="heading">Sitting Desktop Garden</span>
             <span slot="desc">
-              Prototype of a posture-tracking desk companion. Applies
-              computer vision for face detection login and posture tracking.
-              Plant "grows" (rises) when posture is good for a period of time.
-              Plant "wilts" (descends) when posture is bad for a period of time.
-              A connected mousepad gently vibrates when posture is first
+              Prototype of a posture-tracking desk companion. Applies computer
+              vision for face detection login and posture tracking. Plant
+              "grows" (rises) when posture is good for a period of time. Plant
+              "wilts" (descends) when posture is bad for a period of time. A
+              connected mousepad gently vibrates when posture is first
               recognised as bad. Digital screen shows plot of historical posture
               data and assists with other user interaction such as logging in.
               Controlled by a Raspberry Pi and implemented using Python, SQLite,
@@ -116,7 +116,7 @@ home_active %}class="active-page"{% endblock %} {% block content %}
             code-href="https://github.com/MitchellJC/PatternAnalysis-2024/tree/topic-recognition/recognition/47034073_siamese"
             project-href="https://github.com/MitchellJC/PatternAnalysis-2024/tree/topic-recognition/recognition/47034073_siamese"
             img-src="static/images/train_tsne.png"
-            disabled
+            project-button-class="invisible-button"
           >
             <span slot="heading"
               >Detecting Malignant Lesions using Triplet Loss</span

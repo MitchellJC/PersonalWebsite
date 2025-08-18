@@ -801,6 +801,10 @@ a.disabled-button:hover {
   color: white;
 }
 
+a.invisible-button {
+  display: none;
+}
+
 /* Footer Section. */
 .footer-section {
   background: var(--very-dark-blue);
