@@ -1,5 +1,4 @@
 :root {
-  --pink: #f9a2a2;
   --light-blue: #83c2d0;
   --dark-blue: #3f499b;
   --light-purple: #6c74b2;
@@ -205,7 +204,8 @@ nav li {
 }
 
 nav a {
-  color: var(--pink);
+  color: lightgray;
+  font-weight: bold;
 }
 
 nav a:hover {
