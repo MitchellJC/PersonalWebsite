@@ -9,12 +9,20 @@ class ProjectBoxElement extends HTMLElement {
     const shadow = this.attachShadow({ mode: "open" });
     shadow.appendChild(templateContent.cloneNode(true));
 
+    // Code link
     const codeAnchor = shadow.getElementById("code-anchor");
-    const projectAnchor = shadow.getElementById("project-anchor");
-    const img = shadow.getElementById("project-img");
-
     codeAnchor.setAttribute("href", this.getAttribute("code-href"));
-    projectAnchor.setAttribute("href", this.getAttribute("project-href"));
+
+    // Project link
+    const projectAnchor = shadow.getElementById("project-anchor");
+    if (this.getAttribute("disabled") !== null) {
+      projectAnchor.classList.add("disabled-button");
+    } else {
+      projectAnchor.setAttribute("href", this.getAttribute("project-href"));
+    }
+
+    // Image
+    const img = shadow.getElementById("project-img");
     img.setAttribute("src", this.getAttribute("img-src"));
   }
 }
