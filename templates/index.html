@@ -61,133 +61,70 @@ home_active %}class="active-page"{% endblock %} {% block content %}
     <div class="project-grid">
       <ul>
         <!-- Game Gabbler project -->
-        <li id="game-rec-project" class="project">
-          <h3>Game Gabbler</h3>
-          <p>
-            Video game recommender web app. Created using Python (Flask, Numpy,
-            Numba) and Docker.
-            <b
-              >(NOTE: website is set to spin down for low traffic, if website
-              gives application error on first attempt please try again once
-              more.)</b
-            >
-          </p>
-
-          <div class="project-buttons-box">
-            <ul>
-              <li>
-                <a
-                  href="https://github.com/MitchellJC/game-rec-app"
-                  target="blank"
-                  rel="noopener noreferrer"
-                  >View Code</a
-                >
-              </li>
-              <li class="view-project-button disabled-button">
-                <a
-                  title="Website currently down due to running costs."
-                  target="blank"
-                  rel="noopener noreferrer"
-                  >View Project</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <img id="website-screenshot" src="/static/images/game-rec.png" />
+        <li>
+          <project-box-element
+            code-href="https://github.com/MitchellJC/game-rec-app"
+            project-href="/"
+            img-src="static/images/game-rec.png"
+          >
+            <span slot="heading">Game Gabbler</span>
+            <span slot="desc">
+              Video game recommender web app. Created using Python (Flask,
+              Numpy, Numba) and Docker.
+              <b
+                >(NOTE: website is set to spin down for low traffic, if website
+                gives application error on first attempt please try again once
+                more.)</b
+              >
+            </span>
+          </project-box-element>
         </li>
 
         <!-- Super Resolution For Satellite Imagery project -->
-        <li id="game-rec-project" class="project">
-          <h3>Super Resolution for Satellite Imagery</h3>
-          <p>
-            Trained Super Resolution Generative Adversarial Network (SRGAN) to
-            upscale satellite images using low-resolution images from Sentinel-2
-            satellite and high-resolution images from Ven&mu;s satellite.
-          </p>
-
-          <div class="project-buttons-box">
-            <ul>
-              <li>
-                <a
-                  href="https://github.com/LimaoC/super-resolution-for-satellite-imagery"
-                  target="blank"
-                  rel="noopener noreferrer"
-                  >View Code</a
-                >
-              </li>
-              <li class="view-project-button">
-                <a
-                  href="https://github.com/LimaoC/super-resolution-for-satellite-imagery/blob/main/notebooks/srgan/prototype-srgan.pdf"
-                  target="blank"
-                  rel="noopener noreferrer"
-                  >View Project</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <img
-            id="website-screenshot"
-            src="/static/images/super-res-thumbnail.png"
-          />
+        <li>
+          <project-box-element
+            code-href="https://github.com/LimaoC/super-resolution-for-satellite-imagery"
+            project-href="https://github.com/LimaoC/super-resolution-for-satellite-imagery/blob/main/notebooks/srgan/prototype-srgan.pdf"
+            img-src="static/images/super-res-thumbnail.png"
+          >
+            <span slot="heading">Super Resolution for Satellite Imagery</span>
+            <span slot="desc">
+              Trained Super Resolution Generative Adversarial Network (SRGAN) to
+              upscale satellite images using low-resolution images from
+              Sentinel-2 satellite and high-resolution images from Venμs
+              satellite.
+            </span>
+          </project-box-element>
         </li>
 
         <!-- Mighty Mini Golf -->
-        <li id="minigolf-project" class="project">
-          <h3>Mighty Mini Golf</h3>
-          <p>Booking and contact website frontend for mini golf company.</p>
-
-          <div class="project-buttons-box">
-            <ul>
-              <li>
-                <a
-                  href="https://github.com/MitchellJC/mightyMiniGolf"
-                  target="blank"
-                  rel="noopener noreferrer"
-                  >View Code</a
-                >
-              </li>
-
-              <li class="view-project-button">
-                <a
-                  href="https://mitchelljc.github.io/mightyMiniGolf/html/index.html"
-                  target="blank"
-                  rel="noopener noreferrer"
-                  >View Project</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <img src="/static/images/MMM-screenshot.PNG" />
+        <li>
+          <project-box-element
+            code-href="https://github.com/MitchellJC/mightyMiniGolf"
+            project-href="https://mitchelljc.github.io/mightyMiniGolf/html/index.html"
+            img-src="/static/images/MMM-screenshot.PNG"
+          >
+            <span slot="heading">Mighty Mini Golf</span>
+            <span slot="desc">
+              Booking and contact website frontend for mini golf company.
+            </span>
+          </project-box-element>
         </li>
 
         <!-- Portfolio website -->
-        <li id="portfolio-website-project" class="project">
-          <h3>Personal Website</h3>
-          <p>
-            Responsive personal website made in Python (Flask), HTML, JavaScript
-            and CSS. Designed to support screen sizes from 320px wide.
-          </p>
-
-          <div class="project-buttons-box">
-            <ul>
-              <li>
-                <a
-                  href="https://github.com/MitchellJC/PersonalWebsite"
-                  target="blank"
-                  rel="noopener noreferrer"
-                  >View Code</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <img
-            id="website-screenshot"
-            src="/static/images/navbar-screenshot.png"
-          />
+        <li>
+          <project-box-element
+            code-href="https://github.com/MitchellJC/PersonalWebsite"
+            project-href="/"
+            img-src="/static/images/navbar-screenshot.png"
+          >
+            <span slot="heading">Personal Website</span>
+            <span slot="desc">
+              Responsive personal website made in Python (Flask), HTML,
+              JavaScript and CSS. Designed to support screen sizes from 320px
+              wide.
+            </span>
+          </project-box-element>
         </li>
       </ul>
     </div>
