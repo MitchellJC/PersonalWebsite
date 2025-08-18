@@ -1,4 +1,5 @@
 {% extends "base.html" %} {% block title %}Home{% endblock %} {% block head %}
+<script src="/static/js/projectBoxElement.js" defer></script>
 <script src="/static/js/homepage.js" defer></script>
 {% endblock %} {% block body_class %}class="home-body"{% endblock %} {% block
 home_active %}class="active-page"{% endblock %} {% block content %}
@@ -26,6 +27,33 @@ home_active %}class="active-page"{% endblock %} {% block content %}
 </section>
 
 <!-- Projects -->
+<template id="project-template">
+  <link rel="stylesheet" href="/static/css/main.css" />
+  <div class="project">
+    <h3><slot name="heading"></slot></h3>
+    <p>
+      <slot name="desc"></slot>
+    </p>
+
+    <div class="project-buttons-box">
+      <ul>
+        <li>
+          <a id="code-anchor" target="blank" rel="noopener noreferrer"
+            >View Code</a
+          >
+        </li>
+        <li class="view-project-button">
+          <a id="project-anchor" target="blank" rel="noopener noreferrer"
+            >View Project</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <img id="project-img" />
+  </div>
+</template>
+
 <section class="projects-section">
   <div class="container">
     <h2 id="projects-title">Projects</h2>
@@ -36,8 +64,13 @@ home_active %}class="active-page"{% endblock %} {% block content %}
         <li id="game-rec-project" class="project">
           <h3>Game Gabbler</h3>
           <p>
-            Video game recommender web app. Created using Python (Flask, Numpy, Numba) 
-            and Docker. <b>(NOTE: website is set to spin down for low traffic, if website gives application error on first attempt please try again once more.)</b>
+            Video game recommender web app. Created using Python (Flask, Numpy,
+            Numba) and Docker.
+            <b
+              >(NOTE: website is set to spin down for low traffic, if website
+              gives application error on first attempt please try again once
+              more.)</b
+            >
           </p>
 
           <div class="project-buttons-box">
@@ -61,19 +94,16 @@ home_active %}class="active-page"{% endblock %} {% block content %}
             </ul>
           </div>
 
-          <img
-            id="website-screenshot"
-            src="/static/images/game-rec.png"
-          />
+          <img id="website-screenshot" src="/static/images/game-rec.png" />
         </li>
-        
+
         <!-- Super Resolution For Satellite Imagery project -->
         <li id="game-rec-project" class="project">
           <h3>Super Resolution for Satellite Imagery</h3>
           <p>
-            Trained Super Resolution Generative Adversarial Network (SRGAN) to upscale satellite 
-            images using low-resolution images from Sentinel-2 satellite and high-resolution images 
-            from Ven&mu;s satellite.
+            Trained Super Resolution Generative Adversarial Network (SRGAN) to
+            upscale satellite images using low-resolution images from Sentinel-2
+            satellite and high-resolution images from Ven&mu;s satellite.
           </p>
 
           <div class="project-buttons-box">
@@ -151,7 +181,6 @@ home_active %}class="active-page"{% endblock %} {% block content %}
                   >View Code</a
                 >
               </li>
-              
             </ul>
           </div>
 
@@ -160,8 +189,6 @@ home_active %}class="active-page"{% endblock %} {% block content %}
             src="/static/images/navbar-screenshot.png"
           />
         </li>
-
-        
       </ul>
     </div>
   </div>
